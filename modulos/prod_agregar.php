@@ -9,7 +9,10 @@ $ano=$_POST["ano"];
 
 $sql="INSERT INTO productos(nombre, totalusd, ano) values('$nom', $totusd, $ano)";
 
- echo $sql;
+
  
  
- $conn->objconn->query($sql);    
+ $conn->objconn->query($sql);   
+ 
+ echo $sql; 
+}
