@@ -11,6 +11,13 @@ $sql="INSERT INTO productos(nombre, totalusd, ano) values('$nom', $totusd, $ano)
 
  echo $sql;
  
+ 
+ $resultado;
+ 
+ if ($resultado = $miconn->query($sql)) {
+            
+            $miconn->close();
+        }
 }
          
     
